@@ -2,7 +2,6 @@
 #Programme - Analysis of Iris data set. 
 #Author Darragh Brennan
 
-import numpy as np
 import pandas as pd # needed to read in csv data
 import matplotlib.pyplot as plt # needed to created and plot data on charts. 
 
@@ -58,31 +57,55 @@ species = iris_data["species"]
 colors = {"iris-setosa": "purple", "Iris-versicolor": "yellow", "Iris-virginica": "red"} # my dictionary creating paired values
 
 #create scatter plots for each variable
-"""""
-plt.scatter(sepal_length, sepal_width, c ="blue",  #set variable(will call data from list) and color
+
+# Sepal Length vs Sepal Width
+
+plt.figure(figsize=(10, 8))
+plt.scatter(sepal_length, sepal_width, c ="blue", #set variable(will call data from list) and color
             linewidths = 2, # size of edge of marker
             marker ="s", #square marker
             edgecolor ="green", # edge of marker color
             s = 25) # size of indicator
+plt.xlabel("Sepal Length")
+plt.ylabel("Sepal Width")
+plt.title("Sepal Length vs Sepal Width") 
 
 
-plt.scatter(sepal_width, species, c ="orange",  #
+# Petal Length vs Petal Width
+plt.figure(figsize=(10, 8))
+plt.scatter(petal_length, petal_width, c ="orange", 
             linewidths = 2, 
-            marker ="s", #square marker
-            edgecolor ="green", 
+            marker ="D", # marker
+            edgecolor ="black", 
             s = 50)
+plt.xlabel("Petal Length")
+plt.ylabel("Petal Width")
+plt.title("Petal Length vs Petal Width") 
 
-plt.scatter
-plt.xlabel("sepal_length")
-plt.ylabel("sepal_width")
-plt.legend(colors)
-plt.show()
-"""""
-plt.scatter(sepal_length, sepal_width, c ="blue", 
+
+# Sepal Length vs Petal Length
+plt.figure(figsize=(10, 8))
+plt.scatter(sepal_length, petal_length, c ="black", 
             linewidths = 2, # size of edge of marker
-            marker ="s", #square marker
+            marker ="8", # marker
             edgecolor ="green", # edge of marker color
             s = 25) # size of indicator
+plt.xlabel("Septal Length")
+plt.ylabel("Petal Length")
+plt.title("Sepal Length vs Petal Length") 
+
+
+# Sepal Width vs Petal Width
+plt.figure(figsize=(10, 8))
+plt.scatter(sepal_width, petal_width, c ="pink", 
+            linewidths = 2, # size of edge of marker
+            marker ="4", # marker
+            edgecolor ="red", # edge of marker color
+            s = 25) # size of indicator
+plt.xlabel("Sepal Width")
+plt.ylabel("Petal Width")
+plt.title("Sepal Width vs Petal Width") 
+
 plt.show()
 
 

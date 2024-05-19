@@ -39,6 +39,8 @@ https://www.geeksforgeeks.org/matplotlib-pyplot-scatter-in-python/
 https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html#:~:text=import%20matplotlib.pyplot%20as%20plt%20_%2C%20ax%20%3D%20plt.subplots%28%29,ylabel%3Diris.feature_names%29%20_%20%3D%20ax.legend%28scatter.legend_elements%28%29%2C%20iris.target_names%2C%20loc%3D%22lower%20right%22%2C%20title%3D%22Classes%22%29
 https://pythongeeks.org/python-scatter-plot/
 https://www.geeksforgeeks.org/plotting-graph-for-iris-dataset-using-seaborn-and-matplotlib/
+https://realpython.com/lessons/customizing-markers-in-plots/
+https://matplotlib.org/stable/api/markers_api.html
 https://stackoverflow.com/questions/70593493/annotating-axvline-in-matplotlib
 
 
