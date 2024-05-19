@@ -23,6 +23,7 @@ Write programme that will:
 
 # Reference for code
 Python for Dummies - All in One - John Shovic,  Alan Simpson ~ Doing Data Science with Python Chaper 2  Page439 pandas / MatPlotLib\n",
+Python for Dummies - All in One - John Shovic,  Alan Simpson ~ Doing Data Science with Python Chaper 2  Page445 - 449 visualiszing data
 https://stackoverflow.com/questions/63287611/how-to-read-csv-file-with-using-pandas-and-cloud-functions-in-gcp
 https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file
 https://www.geeksforgeeks.org/reading-writing-text-files-python/
@@ -43,5 +44,8 @@ https://realpython.com/lessons/customizing-markers-in-plots/
 https://matplotlib.org/stable/api/markers_api.html
 https://www.youtube.com/watch?v=02BFXhPQWHQ - plotting the Iris Data set
 https://stackoverflow.com/questions/70593493/annotating-axvline-in-matplotlib
+https://www.w3schools.com/python/matplotlib_scatter.asp
+https://stackoverflow.com/questions/46935745/how-to-make-a-scatter-plot-using-dictionary
+https://www.geeksforgeeks.org/plotting-graph-for-iris-dataset-using-seaborn-and-matplotlib/
 
 
