@@ -47,4 +47,32 @@ plt.show()
 plt.savefig("petal_width_histogram.png")
 
 # 3. Outputs a scatter plot of each pair of variables. 
+
+ # define variable to include relevant data as a list
+sepal_length = ["sepal_length"]
+ 
+sepal_width = ["sepal_width"]
+
+petal_length = ["petal_length"]
+ 
+petal_width = ["petal_width"]
+
+ #create scatter plots 
+plt.scatter(sepal_length, sepal_width, c ="green", 
+            linewidths = 2, 
+            marker ="s", 
+            edgecolor ="green", 
+            s = 100)
+ 
+plt.scatter(petal_length, petal_width, c ="yellow",
+            linewidths = 2,
+            marker ="^", 
+            edgecolor ="red", 
+            s = 100)
+ 
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.show()
+
+
 # 4. Performs any other analysis you think is appropriate.
