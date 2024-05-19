@@ -16,5 +16,6 @@ Write programme that will:
 
 
 # Reference for Analysis
-1. Data set pulled from  : https://archive.ics.uci.edu/dataset/53/iris
-2. https://academic.oup.com/jrssig/article/18/6/26/7038520?login=false
+1. https://archive.ics.uci.edu/dataset/53/iris - Data initially sourced
+2. https://academic.oup.com/jrssig/article/18/6/26/7038520?login=false  -  background reading on data set
+3. https://gist.github.com/curran/a08a1080b88344b0c8a7#file-iris-csv  -  Data set in CSV format including headers
