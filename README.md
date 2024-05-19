@@ -23,6 +23,7 @@ Write programme that will:
 
 # Reference for code
 Python for Dummies - All in One - John Shovic,  Alan Simpson ~ Doing Data Science with Python Chaper 2  Page439 pandas / MatPlotLib\n",
+https://stackoverflow.com/questions/63287611/how-to-read-csv-file-with-using-pandas-and-cloud-functions-in-gcp
 https://realpython.com/python-matplotlib-guide/\n
 https://realpython.com/python-matplotlib-guide/#plotting-in-pandas
 https://app.datacamp.com/learn/courses/introduction-to-data-visualization-with-matplotlib
