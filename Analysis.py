@@ -2,6 +2,7 @@
 #Programme - Analysis of Iris data set. 
 #Author Darragh Brennan
 
+import numpy as np
 import pandas as pd # needed to read in csv data
 import matplotlib.pyplot as plt # needed to created and plot data on charts. 
 
@@ -47,42 +48,43 @@ plt.savefig("petal_width_histogram.png")
 """""
 # 3. Outputs a scatter plot of each pair of variables. 
 
- # define variable to include relevant data as a list
-sepal_length = iris_data["sepal_length"]
-sepal_width = iris_data["sepal_width"]
-petal_length = iris_data["petal_length"]
-petal_width = iris_data["petal_width"]
+ # define variable as a list to include relevant data a from csv as a list
+sepal_length = (iris_data["sepal_length"])
+sepal_width = (iris_data["sepal_width"])
+petal_length = (iris_data["petal_length"])
+petal_width = (iris_data["petal_width"])
+
+species = iris_data["species"]
+colors = {"iris-setosa": "purple", "Iris-versicolor": "yellow", "Iris-virginica": "red"} # my dictionary creating paired values
 
 #create scatter plots for each variable
-
+"""""
 plt.scatter(sepal_length, sepal_width, c ="blue",  #set variable(will call data from list) and color
-            linewidths = 2, # size of indicator
+            linewidths = 2, # size of edge of marker
             marker ="s", #square marker
             edgecolor ="green", # edge of marker color
-            s = 50)
+            s = 25) # size of indicator
 
-"""""
-plt.scatter(sepal_width, c ="orange",  #
+
+plt.scatter(sepal_width, species, c ="orange",  #
             linewidths = 2, 
             marker ="s", #square marker
             edgecolor ="green", 
             s = 50)
- 
-plt.scatter(petal_length, c ="pink",
-            linewidths = 2,
-            marker ="^", #triange marker
-            edgecolor ="red", 
-            s = 50)
 
-plt.scatter(petal_width, c ="green",
-            linewidths = 2,
-            marker ="^", #triange marker
-            edgecolor ="red", 
-            s = 50)
-"""""
+plt.scatter
 plt.xlabel("sepal_length")
 plt.ylabel("sepal_width")
+plt.legend(colors)
 plt.show()
+"""""
+plt.scatter(sepal_length, sepal_width, c ="blue", 
+            linewidths = 2, # size of edge of marker
+            marker ="s", #square marker
+            edgecolor ="green", # edge of marker color
+            s = 25) # size of indicator
+plt.show()
+
 
 
 # 4. Performs any other analysis you think is appropriate.
