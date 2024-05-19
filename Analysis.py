@@ -47,19 +47,19 @@ plt.savefig("petal_width_histogram.png")
 """""
 # 3. Outputs a scatter plot of each pair of variables. 
 
+colors = {"iris-setosa": "purple", "Iris-versicolor": "yellow", "Iris-virginica": "red"} # my dictionary creating paired values
+
  # define variable as a list to include relevant data a from csv as a list
 sepal_length = (iris_data["sepal_length"])
 sepal_width = (iris_data["sepal_width"])
 petal_length = (iris_data["petal_length"])
 petal_width = (iris_data["petal_width"])
-
 species = iris_data["species"]
-colors = {"iris-setosa": "purple", "Iris-versicolor": "yellow", "Iris-virginica": "red"} # my dictionary creating paired values
 
 #create scatter plots for each variable
 
 # Sepal Length vs Sepal Width
-
+"""""
 plt.figure(figsize=(10, 8))
 plt.scatter(sepal_length, sepal_width, c ="blue", #set variable(will call data from list) and color
             linewidths = 2, # size of edge of marker
@@ -108,6 +108,27 @@ plt.title("Sepal Width vs Petal Width")
 plt.savefig("Sepal Width vs Petal Width scatter.png")
 plt.show()
 
+"""""
+
+# 4. Performs any other analysis you think is appropriate. 
+# Add code that details species type to compare each variable across the 3 classes of Iris -  need to group by species 
 
 
-# 4. Performs any other analysis you think is appropriate.
+
+plt.figure(figsize=(8, 6))
+for species_name, color in colors.items(): # boolean runs to create new variables (species_name, color) by pullinh the the 2 "items" in my color dictionary
+    species_data = iris_data[iris_data["species"] == species_name] # as the loop runs the programme filters the iris data "species" column using to create 3 subsets of data.  Is True (==) expression runs to categorise the species under the "species name" umbrella fi the value is the same  -  thats long winded apologies. 
+    plt.scatter(species_data["sepal_length"], species_data["sepal_width"], label=species_name, c=color)  #tuple used to store the 2 list virables, label and color identifier
+    linewidths = 2, # size of edge of marker
+    marker ="s", #square marker
+    s = 25 # size of indicator
+
+plt.xlabel("Sepal Length")
+plt.ylabel("Sepal Width")
+plt.title("Sepal Length vs Sepal Width") 
+plt.legend(colors)
+plt.show()
+
+
+
+
