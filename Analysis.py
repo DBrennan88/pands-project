@@ -15,5 +15,33 @@ with open("iris_data_summary.txt", 'w') as file: # opens file in write mode
 
 # 2. Saves a histogram of each variable to png files
 
+plt.figure(figsize=(8, 6)) # scale of graph
+plt.hist(iris_data["sepal_length"], bins=30, color="blue", edgecolor="black") # define the variable, how its repesented (number of buckets/bins the data will be contained in) and the format
+plt.title("Histogram of sepal_length") # title of chart
+plt.xlabel("sepal_length") # ploting all data points for this variabe on my x axis
+plt.ylabel("Frequency") # a count or number of data points defined on my y axis
+plt.show() # show time
+
+plt.figure(figsize=(8, 6))
+plt.hist(iris_data["sepal_width"], bins=30, color="orange", edgecolor="black")
+plt.title("Histogram of sepal_width")
+plt.xlabel("sepal_width")
+plt.ylabel("Frequency")
+plt.show()
+
+plt.figure(figsize=(8, 6))
+plt.hist(iris_data["petal_length"], bins=30, color="pink", edgecolor="black")
+plt.title("Histogram of petal_length")
+plt.xlabel("petal_length")
+plt.ylabel("Frequency")
+plt.show()
+
+plt.figure(figsize=(8, 6))
+plt.hist(iris_data["petal_width"], bins=30, color="green", edgecolor="black")
+plt.title("Histogram of petal_width")
+plt.xlabel("petal_width")
+plt.ylabel("Frequency")
+plt.show()
+
 # 3. Outputs a scatter plot of each pair of variables. 
 # 4. Performs any other analysis you think is appropriate.
