@@ -69,7 +69,7 @@ plt.scatter(sepal_length, sepal_width, c ="blue", #set variable(will call data f
 plt.xlabel("Sepal Length")
 plt.ylabel("Sepal Width")
 plt.title("Sepal Length vs Sepal Width") 
-
+plt.savefig("Sepal Length vs Sepal Width scatter.png") # saves as image to directory/git repo
 
 # Petal Length vs Petal Width
 plt.figure(figsize=(10, 8))
@@ -81,7 +81,7 @@ plt.scatter(petal_length, petal_width, c ="orange",
 plt.xlabel("Petal Length")
 plt.ylabel("Petal Width")
 plt.title("Petal Length vs Petal Width") 
-
+plt.savefig("Petal Length vs Petal Width scatter.png") 
 
 # Sepal Length vs Petal Length
 plt.figure(figsize=(10, 8))
@@ -93,19 +93,19 @@ plt.scatter(sepal_length, petal_length, c ="black",
 plt.xlabel("Septal Length")
 plt.ylabel("Petal Length")
 plt.title("Sepal Length vs Petal Length") 
-
+plt.savefig("Sepal Length vs Petal Length scatter.png")
 
 # Sepal Width vs Petal Width
 plt.figure(figsize=(10, 8))
-plt.scatter(sepal_width, petal_width, c ="pink", 
+plt.scatter(sepal_width, petal_width, c ="red", 
             linewidths = 2, # size of edge of marker
             marker ="4", # marker
-            edgecolor ="red", # edge of marker color
-            s = 25) # size of indicator
+            edgecolor ="pink", # edge of marker color
+            s = 30) # size of indicator
 plt.xlabel("Sepal Width")
 plt.ylabel("Petal Width")
 plt.title("Sepal Width vs Petal Width") 
-
+plt.savefig("Sepal Width vs Petal Width scatter.png")
 plt.show()
 
 
