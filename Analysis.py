@@ -8,13 +8,12 @@ import matplotlib.pyplot as plt # needed to created and plot data on charts.
 iris_data = pd.read_csv("https://github.com/DBrennan88/pands-project/raw/main/iris.csv") # Load the Iris data from the GitHub link
 
  # print(iris_data.head()) # Display the first 5 rows~ confirmed data is being pulled into programme
-
+"""""
 # 1. Outputs a summary of each variable to a single text file, 
 with open("iris_data_summary.txt", 'w') as file: # opens file in write mode
    file.write(iris_data.describe().to_string())
 
-# 2. Saves a histogram of each variable to png files
-"""""
+
 plt.figure(figsize=(8, 6)) # scale of graph
 plt.hist(iris_data["sepal_length"], bins=30, color="blue", edgecolor="black") # define the variable, how its repesented (number of buckets/bins the data will be contained in) and the format
 plt.title("Histogram of sepal_length") # title of chart
@@ -54,21 +53,35 @@ sepal_width = iris_data["sepal_width"]
 petal_length = iris_data["petal_length"]
 petal_width = iris_data["petal_width"]
 
-#create scatter plots 
-plt.scatter(sepal_length, sepal_width, c ="green",  #
+#create scatter plots for each variable
+
+plt.scatter(sepal_length, sepal_width, c ="blue",  #set variable(will call data from list) and color
+            linewidths = 2, # size of indicator
+            marker ="s", #square marker
+            edgecolor ="green", # edge of marker color
+            s = 50)
+
+"""""
+plt.scatter(sepal_width, c ="orange",  #
             linewidths = 2, 
             marker ="s", #square marker
             edgecolor ="green", 
-            s = 200)
+            s = 50)
  
-plt.scatter(petal_length, petal_width, c ="yellow",
+plt.scatter(petal_length, c ="pink",
             linewidths = 2,
             marker ="^", #triange marker
             edgecolor ="red", 
-            s = 100)
- 
-plt.xlabel("X-axis")
-plt.ylabel("Y-axis")
+            s = 50)
+
+plt.scatter(petal_width, c ="green",
+            linewidths = 2,
+            marker ="^", #triange marker
+            edgecolor ="red", 
+            s = 50)
+"""""
+plt.xlabel("sepal_length")
+plt.ylabel("sepal_width")
 plt.show()
 
 
