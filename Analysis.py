@@ -21,13 +21,14 @@ plt.title("Histogram of sepal_length") # title of chart
 plt.xlabel("sepal_length") # ploting all data points for this variabe on my x axis
 plt.ylabel("Frequency") # a count or number of data points defined on my y axis
 plt.show() # show time
+plt.savefig("sepal_length_histogram.png") # saves as image to directory/git repo
 
 plt.figure(figsize=(8, 6))
 plt.hist(iris_data["sepal_width"], bins=30, color="orange", edgecolor="black")
 plt.title("Histogram of sepal_width")
 plt.xlabel("sepal_width")
 plt.ylabel("Frequency")
-plt.show()
+plt.savefig("sepal_width_histogram.png")
 
 plt.figure(figsize=(8, 6))
 plt.hist(iris_data["petal_length"], bins=30, color="pink", edgecolor="black")
@@ -35,6 +36,7 @@ plt.title("Histogram of petal_length")
 plt.xlabel("petal_length")
 plt.ylabel("Frequency")
 plt.show()
+plt.savefig("petal_length_histogram.png")
 
 plt.figure(figsize=(8, 6))
 plt.hist(iris_data["petal_width"], bins=30, color="green", edgecolor="black")
@@ -42,6 +44,7 @@ plt.title("Histogram of petal_width")
 plt.xlabel("petal_width")
 plt.ylabel("Frequency")
 plt.show()
+plt.savefig("petal_width_histogram.png")
 
 # 3. Outputs a scatter plot of each pair of variables. 
 # 4. Performs any other analysis you think is appropriate.
