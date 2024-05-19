@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt # needed to created and plot data on charts.
 iris_data = pd.read_csv("https://github.com/DBrennan88/pands-project/raw/main/iris.csv") # Load the Iris data from the GitHub link
 
  # print(iris_data.head()) # Display the first 5 rows~ confirmed data is being pulled into programme
-"""""
+
 # 1. Outputs a summary of each variable to a single text file, 
 with open("iris_data_summary.txt", 'w') as file: # opens file in write mode
    file.write(iris_data.describe().to_string())
@@ -44,7 +44,7 @@ plt.xlabel("petal_width")
 plt.ylabel("Frequency")
 plt.show()
 plt.savefig("petal_width_histogram.png")
-"""""
+
 # 3. Outputs a scatter plot of each pair of variables. 
 
 colors = {"setosa": "purple", "versicolor": "yellow", "virginica": "red"} # my dictionary creating paired values # labelling difference here caused me errors. 
@@ -59,7 +59,7 @@ species = iris_data["species"]
 #create scatter plots for each variable
 
 # Sepal Length vs Sepal Width
-"""""
+
 plt.figure(figsize=(10, 8))
 plt.scatter(sepal_length, sepal_width, c ="blue", #set variable(will call data from list) and color
             linewidths = 2, # size of edge of marker
@@ -108,8 +108,6 @@ plt.ylabel("Petal Width")
 plt.title("Sepal Width vs Petal Width") 
 plt.savefig("Sepal Width vs Petal Width scatter.png")
 plt.show()
-
-"""""
 
 # 4. Performs any other analysis you think is appropriate. 
 # Add code that details species type to compare each variable across the 3 classes of Iris -  need to group by species 
