@@ -116,8 +116,8 @@ plt.show()
 # Sepal Length vs Sepal Width
 
 plt.figure(figsize=(8, 6))
-for species_name, color in colors.items(): # boolean runs to create new variables (species_name, color) by pullinh the the 2 "items" in my color dictionary
-    species_data = iris_data[iris_data["species"] == species_name] # as the loop runs the programme filters the iris data "species" column using to create 3 subsets of data.  Is True (==) expression runs to categorise the species under the "species name" umbrella fi the value is the same  -  thats long winded apologies. 
+for species_name, color in colors.items(): # foor loop control function runs to create new variables (species_name, color) by pullinh the the 2 "items" in my color dictionary
+    species_data = iris_data[iris_data["species"] == species_name] # as the loop runs the  programme filters the iris data "species" column using to create 3 subsets of data. boolean expression Is True (==) expression runs to categorise the species under the "species name" umbrella fi the value is the same  -  thats long winded apologies. 
     plt.scatter(species_data["sepal_length"], species_data["sepal_width"], label=species_name, c=color)  #tuple used to store the 2 list virables, label and color identifier
     linewidths = 2, # size of edge of marker
     marker ="s", #square marker
@@ -133,7 +133,7 @@ plt.savefig("SpeciesComparison1.png")
 # Petal Length vs Petal Width
 
 plt.figure(figsize=(8, 6))
-for species_name, color in colors.items(): # boolean runs to create new variables (species_name, color) by pullinh the the 2 "items" in my color dictionary
+for species_name, color in colors.items(): 
     species_data = iris_data[iris_data["species"] == species_name] 
     plt.scatter(species_data["petal_length"], species_data["petal_width"], label=species_name, c=color)  
     linewidths = 2, # size of edge of marker
@@ -151,7 +151,7 @@ plt.savefig("SpeciesComparison2.png")
 # Sepal Length vs Petal Length
 
 plt.figure(figsize=(8, 6))
-for species_name, color in colors.items(): # boolean runs to create new variables (species_name, color) by pullinh the the 2 "items" in my color dictionary
+for species_name, color in colors.items(): 
     species_data = iris_data[iris_data["species"] == species_name] 
     plt.scatter(species_data["sepal_length"], species_data["petal_length"], label=species_name, c=color)  
     linewidths = 2, # size of edge of marker
@@ -168,7 +168,7 @@ plt.savefig("SpeciesComparison3.png")
 # Sepal Width vs Petal Width
 
 plt.figure(figsize=(8, 6))
-for species_name, color in colors.items(): # boolean runs to create new variables (species_name, color) by pullinh the the 2 "items" in my color dictionary
+for species_name, color in colors.items(): 
     species_data = iris_data[iris_data["species"] == species_name] 
     plt.scatter(species_data["sepal_width"], species_data["petal_width"], label=species_name, c=color)  
     linewidths = 2, # size of edge of marker
