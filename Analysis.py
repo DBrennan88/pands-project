@@ -130,6 +130,7 @@ plt.ylabel("Sepal Width")
 plt.title("Sepal Length vs Sepal Width") 
 plt.legend(colors)
 plt.show()
+plt.savefig("SpeciesComparison1.png")
 
 # Petal Length vs Petal Width
 
@@ -146,6 +147,7 @@ plt.ylabel("Petal Width")
 plt.title("Petal Length vs Petal Width") 
 plt.legend(colors)
 plt.show()
+plt.savefig("SpeciesComparison2.png")
 
 
 # Sepal Length vs Petal Length
@@ -163,6 +165,7 @@ plt.ylabel("Petal Length")
 plt.title("Sepal Length vs Petal Length") 
 plt.legend(colors)
 plt.show()
+plt.savefig("SpeciesComparison3.png")
 
 # Sepal Width vs Petal Width
 
@@ -179,3 +182,6 @@ plt.ylabel("Petal Width")
 plt.title("Sepal Width vs Petal Width") 
 plt.legend(colors)
 plt.show()
+plt.savefig("SpeciesComparison4.png")
+
+
