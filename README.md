@@ -1,1 +1,20 @@
-# Project TBD
+The Fisher Iris Data set diplays variations of the Iris Plant. Contains 3 classess of 50 instances each. 3 classes are type of Iris plant. Each "instance" is a individual plant data points. 
+3 clasees of Iris are Setosa, Versicolour, and Virginica with data points for Sepal length/width and patel length/width of 50 samples opf each type. 
+The data set has a consistent structire with no missing fields and is used to teach machine learning,  data analysis and data visualization concepts.  
+
+What am i trying to acheive here: 
+
+
+Research the data set online and write a summary. 
+
+
+Write programme that will:
+1. Outputs a summary of each variable to a single text file, 
+2. Saves a histogram of each variable to png files, and 
+3. Outputs a scatter plot of each pair of variables. 
+4. Performs any other analysis you think is appropriate.
+
+
+# Reference for Analysis
+1. Data set pulled from  : https://archive.ics.uci.edu/dataset/53/iris
+2. https://academic.oup.com/jrssig/article/18/6/26/7038520?login=false
