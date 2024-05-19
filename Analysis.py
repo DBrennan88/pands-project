@@ -14,7 +14,7 @@ with open("iris_data_summary.txt", 'w') as file: # opens file in write mode
    file.write(iris_data.describe().to_string())
 
 # 2. Saves a histogram of each variable to png files
-
+"""""
 plt.figure(figsize=(8, 6)) # scale of graph
 plt.hist(iris_data["sepal_length"], bins=30, color="blue", edgecolor="black") # define the variable, how its repesented (number of buckets/bins the data will be contained in) and the format
 plt.title("Histogram of sepal_length") # title of chart
@@ -45,28 +45,25 @@ plt.xlabel("petal_width")
 plt.ylabel("Frequency")
 plt.show()
 plt.savefig("petal_width_histogram.png")
-
+"""""
 # 3. Outputs a scatter plot of each pair of variables. 
 
  # define variable to include relevant data as a list
-sepal_length = ["sepal_length"]
- 
-sepal_width = ["sepal_width"]
+sepal_length = iris_data["sepal_length"]
+sepal_width = iris_data["sepal_width"]
+petal_length = iris_data["petal_length"]
+petal_width = iris_data["petal_width"]
 
-petal_length = ["petal_length"]
- 
-petal_width = ["petal_width"]
-
- #create scatter plots 
-plt.scatter(sepal_length, sepal_width, c ="green", 
+#create scatter plots 
+plt.scatter(sepal_length, sepal_width, c ="green",  #
             linewidths = 2, 
-            marker ="s", 
+            marker ="s", #square marker
             edgecolor ="green", 
-            s = 100)
+            s = 200)
  
 plt.scatter(petal_length, petal_width, c ="yellow",
             linewidths = 2,
-            marker ="^", 
+            marker ="^", #triange marker
             edgecolor ="red", 
             s = 100)
  
