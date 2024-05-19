@@ -18,12 +18,15 @@ Write programme that will:
 1. https://archive.ics.uci.edu/dataset/53/iris - Data initially sourced
 2. https://academic.oup.com/jrssig/article/18/6/26/7038520?login=false  -  background reading on data set
 3. https://gist.github.com/curran/a08a1080b88344b0c8a7#file-iris-csv  -  Data set in CSV format including headers
-4. https://www.statology.org/iris-dataset-r/
-5. https://gexijin.github.io/learnR/visualizing-the-iris-flower-data-set.html
+4. https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
+5. https://www.pycodemates.com/2022/05/iris-dataset-classification-with-python.html?utm_content=cmp-true
 
 # Reference for code
 Python for Dummies - All in One - John Shovic,  Alan Simpson ~ Doing Data Science with Python Chaper 2  Page439 pandas / MatPlotLib\n",
 https://stackoverflow.com/questions/63287611/how-to-read-csv-file-with-using-pandas-and-cloud-functions-in-gcp
+https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file
+https://www.geeksforgeeks.org/reading-writing-text-files-python/
+https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
 https://realpython.com/python-matplotlib-guide/\n
 https://realpython.com/python-matplotlib-guide/#plotting-in-pandas
 https://app.datacamp.com/learn/courses/introduction-to-data-visualization-with-matplotlib
